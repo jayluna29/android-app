@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thesis.luna.vacationtracker.TabActivity_3">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/placeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Place \n\n\n\n" />
+
+                <EditText
+                    android:id="@+id/placeEdit"
+                    android:layout_width="314dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edittextstyle">
+
+                    <requestFocus />
+
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/addressText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address  \n\n\n\n" />
+
+                <TextView
+                    android:id="@+id/captureLoc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capturing current location..."
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    android:background="@drawable/edittextstyle"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/writeNoteText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Write Note \n\n\n\n\n\n" />
+
+                <EditText
+                    android:id="@+id/writeNoteEdit"
+                    android:layout_width="314dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/edittextstyle">
+
+                    <requestFocus />
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/captureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Capture \n\n\n\n" />
+
+                <ImageButton
+                    android:id="@+id/captureRecordButton"
+                    android:layout_width="103dp"
+                    android:layout_height="98dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="0.22"
+                    android:baselineAlignBottom="false"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    app:srcCompat="@drawable/appleimage" />
+
+                <ImageView
+                    android:id="@+id/capturedImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawingCacheQuality="high"
+
+                    />
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveRecordButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="@drawable/edittextstyle"/>
+
+            <Button
+                android:id="@+id/cancelRecordButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/edittextstyle"
+                android:text="Cancel" />
+
+
+            <Button
+                android:id="@+id/buttonViewAll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittextstyle"
+                android:text="View All My Records" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
