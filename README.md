@@ -1,4 +1,6 @@
 
+*/Justin Luna's Senior Thesis
+
 Travel has always been a persons' best pass time, even mine.
 
 Vacation Tracker is an Android based app designed for travelers to reach their destination with ease and satisfaction due to its multimedia features. 
